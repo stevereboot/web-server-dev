@@ -1,0 +1,6 @@
+	set ts=8 et sw=4 sts=4
+	set autoindent
+	set nu
+	set ruler
+	set backspace=2
+	syntax on
