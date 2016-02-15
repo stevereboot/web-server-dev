@@ -1,0 +1,11 @@
+{
+  "name": "bower",
+  "dependencies": {
+    "angular": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "angular-ui-router": "latest",
+    "marked": "latest",
+    "highlightjs": "latest"
+  }
+}
