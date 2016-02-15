@@ -1,6 +1,19 @@
-	set ts=8 et sw=4 sts=4
-	set autoindent
-	set nu
-	set ruler
-	set backspace=2
-	syntax on
+set ts=8 et sw=4 sts=4
+set autoindent
+set nu
+set ruler
+set backspace=2
+syntax on
+
+===================
+
+import autoit
+
+import ctypes
+user32 = ctypes.windll.user32
+screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+
+halfscreen = screensize[0] / 2
+
+autoit.win_move('[CLASS:VirtualConsoleClass]', 0, 0, halfscreen, screensize[1]-40)
+autoit.win_move('[CLASS:PX_WINDOW_CLASS]', halfscreen, 0, halfscreen, screensize[1]-40)
